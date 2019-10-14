@@ -1,0 +1,176 @@
+<html lang="zh-CN"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8">
+
+    <title>公交查询_公交线路查询_公交路线 - 公交网
+    </title>
+    <meta http-equiv="Cache-Control" content="no-transform ">
+    <link rel="canonical" href="http://www.gongjiao.com">
+    <meta name="applicable-device" content="pc">
+
+
+
+    <script type="text/javasrfcript" async="" src="http://pos.baidu.com/auto_dup?psi=7f108f352c7f5560121a07fde6b41bef&amp;di=0&amp;dri=0&amp;dis=0&amp;dai=0&amp;ps=0&amp;enu=encoding&amp;dcb=___baidu_union_callback_&amp;dtm=AUTO_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1555308355397&amp;ti=%E5%85%AC%E4%BA%A4%E6%9F%A5%E8%AF%A2_%E5%85%AC%E4%BA%A4%E7%BA%BF%E8%B7%AF%E6%9F%A5%E8%AF%A2_%E5%85%AC%E4%BA%A4%E8%B7%AF%E7%BA%BF%20-%20%E5%85%AC%E4%BA%A4%E7%BD%91&amp;ari=2&amp;dbv=2&amp;drs=1&amp;pcs=1783x906&amp;pss=1783x207&amp;cfv=0&amp;cpl=26&amp;chi=1&amp;cce=true&amp;cec=UTF-8&amp;tlm=1555308355&amp;rw=906&amp;ltu=http%3A%2F%2Fwww.gongjiao.com%2F&amp;ltr=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DHiDDtEgaA2wR0yiffpHDV5tWw13vjGmsjf3BS87W3B2rxuMZMcv3XqcsQDUQZaUG%26wd%3D%26eqid%3Df6762d2b0000e215000000025cb41f3b&amp;lcr=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DHiDDtEgaA2wR0yiffpHDV5tWw13vjGmsjf3BS87W3B2rxuMZMcv3XqcsQDUQZaUG%26wd%3D%26eqid%3Df6762d2b0000e215000000025cb41f3b&amp;ecd=1&amp;uc=1920x1040&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1555308355&amp;dc=4"></script><script type="text/javascript" async="" src="http://pos.baidu.com/scjm?psi=7f108f352c7f5560121a07fde6b41bef&amp;di=u2757643&amp;dri=0&amp;dis=0&amp;dai=1&amp;ps=207x411&amp;enu=encoding&amp;dcb=___adblockplus&amp;dtm=SSP_JSONP&amp;dvi=0.0&amp;dci=-1&amp;dpt=none&amp;tsr=0&amp;tpr=1555308355397&amp;ti=%E5%85%AC%E4%BA%A4%E6%9F%A5%E8%AF%A2_%E5%85%AC%E4%BA%A4%E7%BA%BF%E8%B7%AF%E6%9F%A5%E8%AF%A2_%E5%85%AC%E4%BA%A4%E8%B7%AF%E7%BA%BF%20-%20%E5%85%AC%E4%BA%A4%E7%BD%91&amp;ari=2&amp;dbv=2&amp;drs=1&amp;pcs=1783x906&amp;pss=1783x207&amp;cfv=0&amp;cpl=26&amp;chi=1&amp;cce=true&amp;cec=UTF-8&amp;tlm=1555308355&amp;rw=906&amp;ltu=http%3A%2F%2Fwww.gongjiao.com%2F&amp;ltr=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DHiDDtEgaA2wR0yiffpHDV5tWw13vjGmsjf3BS87W3B2rxuMZMcv3XqcsQDUQZaUG%26wd%3D%26eqid%3Df6762d2b0000e215000000025cb41f3b&amp;ecd=1&amp;uc=1920x1040&amp;pis=-1x-1&amp;sr=1920x1080&amp;tcn=1555308355&amp;exps=110011"></script><script src="//hm.baidu.com/hm.js?3a770ddcc200e78bfe93dc8cae6644e0"></script><script src="http://push.zhanzhang.baidu.com/push.js"></script><script src="http://www.gongjiao.com/asset/gongjiao/js/mobile_redirect.js"></script>
+
+    <meta name="360-site-verification" content="d1ce2130130c3f009397a1be28f76ff8">
+
+    <meta name="description" content="公交网（www.gongjiao.com）提供全国各大城市的公交线路查询,查询地铁线路图,公交站点查询,公交换乘查询,就上公交网。">
+    <meta name="keywords" content="公交查询,公交线路查询,公交路线,公交车查询,公交车,公交网">
+
+
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://www.gongjiao.com/asset/gongjiao/css/global.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://www.gongjiao.com/asset/gongjiao/css/gongjiao.css?v=11">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://www.gongjiao.com/asset/gongjiao/css/gj150121.css?v=7">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://www.gongjiao.com/asset/autocomplete/jquery.autocomplete.css">
+
+
+
+    <script src="http://www.gongjiao.com/asset/gongjiao/js/jquery.js"></script>
+
+    <script src="http://www.gongjiao.com/asset/autocomplete/jquery.autocomplete.js"></script>
+
+    <script src="http://www.gongjiao.com/asset/gongjiao/js/gongjiao.js?v=2"></script>
+
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?3a770ddcc200e78bfe93dc8cae6644e0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+
+
+    <script src="http://su.bdimg.com/static/dspui/js/ls.js?v=2776"></script></head>
+<body bgcolor="#2894FF">
+<div id="BAIDU_DUP_fp_wrapper" style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;"><iframe id="BAIDU_DUP_fp_iframe" src="https://pos.baidu.com/wh/o.htm?ltr=" style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe></div>
+<div class="hd-canvas f-cb">
+    <div class="g-container f-cb" style="width:600px;">
+        <a class="u-logo" href="/"></a>
+
+        <div class="g-hd-searcher">
+
+            <p>您的坐在位置：南京</p>
+            <center>
+            <div class="m-bus-searcher">
+                <div class="search-types f-cb">
+                    <div class="m-tabs f-cb" data-target="#JS-home-search-forms">
+                        <ul class="f-cb">
+                            <li class="current"><a href="javascript:void(0);">换乘</a></li>
+                            <li class=""><a href="javascript:void(0);">线路</a></li>
+                            <li class=""><a href="javascript:void(0);">站点</a></li>
+                            <!-- <li><a href="javascript:void(0);">驾车</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of .search-types -->
+                <div class="m-tab-pages" id="JS-home-search-forms">
+
+                    <!-- 换乘 -->
+                    <div class="m-tab-page m-tab-page-current">
+
+                        <div class="search-form">
+                            <form th:action="@{/user/inquiry/inquiryPlan/result}" class="f-fb" method="get">
+                                <div class="starting">
+                                    <i class="u-icon u-icon-start"></i>
+                                    <input tabindex="1" type="text" name="start" value="请输入起始站点名称">
+                                </div>
+                                <div class="exchange">
+                                    <a href="@" class="f-cb ">
+                                        <i class="u-icon u-icon-exchange"></i>
+                                    </a>
+                                </div>
+                                <div class="end">
+                                    <i class="u-icon u-icon-end"></i>
+                                    <input tabindex="2" type="text" name="aim" value="请输入终点站点名称">
+                                </div>
+                                <input type="hidden" name="type" value="transfer">
+                                <button type="submit"><span>查询</span></button>
+                            </form>
+                        </div>
+                        <!-- end of .search-form -->
+
+                    </div>
+                    <!-- .m-tab-page 换乘 -->
+
+
+                    <!-- 线路 -->
+                    <div class="m-tab-page">
+
+                        <div class="search-form">
+                            <form th:action="@{/user/inquiry/inquiryRoute/result}"  class="f-fb" method="get">
+                                <div class="starting">
+                                    <i class="u-icon u-icon-start"></i>
+                                    <input class="large" type="text" name="busNum" value="请输入线路名称">
+                                </div>
+                                <input type="hidden" name="type" value="line">
+                                <button type="submit"><span>查询</span></button>
+                            </form>
+                        </div>
+                        <!-- end of .search-form -->
+
+                    </div>
+                    <!-- .m-tab-page 线路 -->
+
+
+
+                    <!-- 站点 -->
+                    <div class="m-tab-page">
+
+                        <div class="search-form">
+                            <form th:action="@{/user/inquiry/inquiryPlan/result}" class="f-fb" method="get">
+                                <div class="starting">
+                                    <i class="u-icon u-icon-start"></i>
+                                    <input class="large" type="text" name="stationName" value="请输入站点名称">
+                                </div>
+
+                                <input type="hidden" name="type" value="station">
+                                <button type="submit"><span>查询</span></button>
+                            </form>
+                            <script type="text/javascript">
+                                        var cpro_id="u2320218";
+                                        (window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",hn:"0",wn:"0",imgRatio:"1.7",scale:"20.20",pat:"6",tn:"template_inlay_all_ mobile_lu_native",rss1:"#FFFFFF",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9 B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0",ptbg:"70",ptp:"1"}
+                                    </script>
+                        </div>
+                        <!-- end of .search-form -->
+
+                    </div>
+                    <!-- .m-tab-page 站点 -->
+
+
+                </div>
+                <!-- .m-tab-pages -->
+            </div>
+            <!-- end of .m-bus-searcher -->
+            </center>
+        </div>
+
+        <!-- .m-hd-searcher -->
+    </div>
+    <!-- .container -->
+</div>
+</body>
+
+</html>

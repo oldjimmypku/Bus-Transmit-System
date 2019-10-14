@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Announcement</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
+</head>
+<body class="container">
+<br/>
+<h1>留言</h1>
+<br/><br/>
+<div class="with:80%">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>用户名</th>
+            <th>留言内容</th>
+            <th>留言时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        <span  th:each="message : ${messages}">
+                <tr  th:each="messageContent : ${message.getValue().messageContent}">
+                    <td scope="row" th:text="${message.getKey()}"></td>
+                    <td th:text="${messageContent['content']}">Otto</td>
+                    <td th:text="${messageContent['date']}">Otto</td>
+                    <td><a th:href="@{/admin/message/delete(userName=${message.getKey()},date=${messageContent.date})}">delete</a></td>
+                </tr>
+        </span>
+        </tbody>
+    </table>
+</div>
+<div class="form-group">
+    <div class="col-sm-2 control-label">
+        <a th:href="@{/index}" class="btn btn-info">返回首页</a>
+    </div>
+</div>
+
+</body>
+</html>

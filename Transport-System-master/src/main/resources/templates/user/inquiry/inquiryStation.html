@@ -1,0 +1,41 @@
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8"/>
+    <title>查询公交站点信息</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
+</head>
+<body class="container">
+<h1>查询公交站点信息</h1>
+<br/>你好：<a sec:authentication="name"></a>
+<p>
+    <center>
+
+        <form th:action="@{/user/inquiry/inquiryStation/result}" method="get">
+<p>请输入站点名称：<input type="text" name="stationName"/></p>
+<input type="submit" value="查询">
+
+</form>
+</center>
+</p>
+
+<p>
+    <a th:href="@{/user/inquiry/inquiryRoute}">  查询公交路线</a>
+    <a th:href="@{/user/inquiry/inquiryPlan}"> | 乘车方案查询</a>
+    <br/><hr/>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" class="btn btn-primary" value="注销"/>
+    &nbsp; &nbsp; &nbsp;
+    <a th:href="@{/user/inquiry}" class="btn btn-info">返回查询页</a>
+</form>
+</p>
+
+</body>
+</html>

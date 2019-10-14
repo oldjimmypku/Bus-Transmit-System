@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>主页</title>
+    <link rel="stylesheet" th:href="@{css/bootstrap.css}"/>
+    <style type="text/css">
+body { padding: 40px; }
+</style>
+</head>
+<body class="container">
+<h1>导航页</h1>
+<br/>你好：<a sec:authentication="name"></a>
+<p>
+    <a sec:authorize="hasAuthority('P_USER')" th:href="@{/user/inquiry}"> 公交查询</a>
+    <a sec:authorize="hasAuthority('P_USER')" th:href="@{/user/announcement}"> | 公告查询</a>
+    <a sec:authorize="hasAuthority('P_ADMIN')" th:href="@{/admin/announcement}"> 公告更新</a>
+    <a sec:authorize="hasAuthority('P_USER')" th:href="@{/user/message}"> | 留言板查看</a>
+    <a sec:authorize="hasAuthority('P_ADMIN')" th:href="@{/admin/message}"> | 留言板查看</a>
+    <a sec:authorize="hasAuthority('P_USER')" th:href="@{/user/history}"> | 历史记录</a>
+    <a sec:authorize="hasAuthority('P_USER')" th:href="@{/user/new}"> | test</a>
+    <br/><hr/>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" class="btn btn-primary" value="注销"/>
+</form>
+</p>
+</body>
+</html>
